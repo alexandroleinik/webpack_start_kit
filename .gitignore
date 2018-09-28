@@ -1,4 +1,2 @@
 #Исключим node_modules/:
 node_modules/
-#Исключим сам файл .gitignore:
-.gitignore

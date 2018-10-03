@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"./css/style.bundle.css","sourceRoot":""}
+{"version":3,"sources":["webpack:///./src/scss/src/scss/style.scss"],"names":[],"mappings":"AAAA;EACI,sBAAqB;EACrB,mBAAkB;EAClB,iBAAgB;EAChB,sCAAqC","file":"./css/style.bundle.css","sourcesContent":["@font-face {\r\n    font-family: 'Roboto';\r\n    font-style: normal;\r\n    font-weight: 400;\r\n    src: url(../fonts/Roboto-Regular.ttf);\r\n  }"],"sourceRoot":""}

@@ -84,10 +84,6 @@ module.exports = {
       {
         from: './src/img',
         to: './img'
-      },
-      {
-        from: './src/uploads',
-        to: './uploads'
       }
     ]),
   ].concat(htmlPlugins)

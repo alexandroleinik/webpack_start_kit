@@ -11,7 +11,7 @@ function generateHtmlPlugins(templateDir) {
     const name = parts[0];
     const extension = parts[1];
     return new HtmlWebpackPlugin({
-      filename: `${name}.html`,
+      filename: `${name}.pug`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
       inject: false,
     })
@@ -60,11 +60,9 @@ module.exports = {
             }
           ]
         })
-      },
-      {
-        test: /\.html$/,
-        include: path.resolve(__dirname, 'src/html/includes'),
-        use: ['raw-loader']
+      },{ 
+        test: /\.pug$/,
+        use: ['pug-loader']
       },
     ]
   },
@@ -72,6 +70,8 @@ module.exports = {
     new ExtractTextPlugin({
       filename: './css/style.bundle.css',
       allChunks: true,
+    }),new HtmlWebpackPlugin({
+      template: './src/html/views/index.pug'
     }),
     new CopyWebpackPlugin([{
         from: './src/fonts',

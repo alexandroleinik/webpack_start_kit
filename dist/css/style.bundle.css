@@ -4,4 +4,9 @@
   font-weight: 400;
   src: url(../fonts/Roboto-Regular.ttf); }
 
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center; }
+
 /*# sourceMappingURL=style.bundle.css.map*/
